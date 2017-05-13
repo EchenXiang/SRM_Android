@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ct.srm_android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".User"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".OrderSelectViewActivity" />
+        <activity android:name=".OrderSelectActivity" />
+        <activity android:name=".OrderListViewActivity" />
+        <activity android:name=".OrderSelectDetailActivity" />
+        <activity android:name=".OrderTrackDetailActivity" />
+        <activity android:name=".OrderStatisticDetailActivity" />
+        <activity android:name=".OrderFeedbackDetailActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".OrderSelectListviewActivity" />
+        <activity android:name=".OrderTrackListviewActivity" />
+        <activity android:name=".OrderStatisticListviewActivity" />
+        <activity android:name=".OrderFeedbackListviewActivity" />
+        <activity android:name=".stocks_MainActivity" />
+        <activity android:name=".stocks" />
+        <activity android:name=".stocks_listView" />
+        <activity android:name=".stocks_item_chose" />
+        <activity android:name=".Performance.PerformanceActivity" />
+        <activity android:name=".Performance.InfoListActivity" />
+        <activity android:name=".Performance.DetailActivity" />
+        <activity android:name=".Plan.PurchasePlanMainActivity" />
+        <activity android:name=".Plan.ThreeDayPurchasePlanListview" />
+        <activity android:name=".Plan.ThreeDayPurchasePlanItemConcrete" />
+        <activity android:name=".Plan.MonthPurchasePlanListview" />
+        <activity android:name=".Plan.MonthPurchasePlanItemConcrete" />
+        <activity android:name=".Plan.TenDayPurchasePlanListview" />
+        <activity android:name=".Plan.TenDayPurchasePlanItemConcrete" />
+        <activity android:name=".Plan.YearPurchasePlanListview" />
+        <activity android:name=".Plan.YearPurchasePlanItemConcrete" />
+        <activity android:name=".Plan.DoubleWeekPurchasePlanListview" />
+        <activity android:name=".Plan.DoubleWeekPurchasePlanItemConcrete" />
+        <activity android:name=".Notice.Notice_ListViewActivity" />
+        <activity android:name=".Notice.Notice_MainActivity" />
+        <activity android:name=".Notice.Notice_XQActivity" />
+        <activity android:name=".Logistics.Logistics_ListViewActivity" />
+        <activity android:name=".Logistics.Logistics_MainActivity" />
+        <activity android:name=".Logistics.Logistics_XQActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Logistics.Delivery_ListViewActivity" />
+        <activity android:name=".Logistics.DeliveryDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Logistics.LogisticsDetailActivity"></activity>
+    </application>
+
+</manifest>

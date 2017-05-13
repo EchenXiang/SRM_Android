@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:id="@+id/text1"
+            android:text="反馈企业："
+            android:gravity="center"
+            android:textSize="7.5pt"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/notice_layout_feedback_edittext_theme"
+            android:background="@drawable/edit_text_shape"
+            android:hint="单行输入" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/text3"
+            android:text="反馈人："
+            android:gravity="center"
+            android:textSize="7.5pt"
+            android:textColor="#000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/notice_layout_feedback_edittext_company"
+            android:background="@drawable/edit_text_shape"
+            android:hint="单行输入" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/text5"
+            android:text="发布时间："
+            android:gravity="center"
+            android:textSize="7.5pt"
+            android:textColor="#000"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/notice_layout_feedback_edittext_time1"
+            android:background="@drawable/edit_text_shape"
+            android:hint="单行输入"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/text5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@+id/notice_layout_feedback_edittext_time1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rili"
+            android:id="@+id/notice_layout_feedback_button_calendar1"
+            android:onClick="onclick_notice_layout_feedback_button_calendar1"
+            android:layout_gravity="right"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/notice_layout_feedback_edittext_time2"
+            android:background="@drawable/edit_text_shape"
+            android:hint="单行输入"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rili"
+            android:id="@+id/notice_layout_feedback_button_calendar2"
+            android:onClick="onclick_notice_layout_feedback_button_calendar2"
+            android:layout_alignRight="@+id/notice_layout_feedback_edittext_time2" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/notice_layout_feedback_button_inquire"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="查询"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/shape2"
+        android:layout_gravity="center"
+        android:textSize="18dip"
+        />
+
+</LinearLayout>

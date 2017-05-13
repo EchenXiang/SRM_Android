@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ct.srm_android.OrderSelectDetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/activity_main_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="#101010"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:src="@drawable/back"
+                android:id="@+id/order_listview_back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="订单查询结果"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="00dp"
+            android:background="@drawable/bk">
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:text="企业名称："
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/selects_item_company_name"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bk">
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:text="订单号："
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/selects_item_order_id"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bk">
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:text="发件人："
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/selects_item_purchase_contact_name"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bk">
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:text="收件人："
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/selects_item_contact"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bk">
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:text="订单生成日期："
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/selects_item_order_generate_day"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bk">
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:text="确认状态："
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/selects_item_provider_confirm"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bk">
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:text="发货状态："
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/selects_item_order_status"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bk">
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:text="打印次数："
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text=""
+                android:gravity="center_vertical|left"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/selects_item_print_number"/>
+        </TableRow>
+
+    </TableLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发货详情"
+            android:id="@+id/button5"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/bg_alibuybutton"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到货分析"
+            android:id="@+id/button6"
+            android:layout_alignBottom="@+id/button5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_alibuybutton"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

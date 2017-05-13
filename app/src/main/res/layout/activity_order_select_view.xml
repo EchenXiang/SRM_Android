@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ct.srm_android.OrderSelectViewActivity">
+    android:focusableInTouchMode="false">
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/activity_order_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back"
+            android:id="@+id/order_select_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="丹阳市中远车灯有限公司"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/order_select_provider"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="30mm"
+        android:id="@+id/parentP"
+        android:layout_below="@+id/navi">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:persistentDrawingCache="animation">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1mm"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv1"
+            android:src="@drawable/node_select"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv2"
+            android:src="@drawable/node_normal"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv3"
+            android:src="@drawable/node_normal"
+            />
+
+    </LinearLayout>
+    </RelativeLayout>
+    <!--<HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="9mm"
+        android:id="@+id/horizontalScrollView"
+        android:layout_below="@+id/parentP"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnparent">
+
+            <Button
+                android:layout_width="30mm"
+                android:layout_height="wrap_content"
+                android:text="供应商订单查询"
+                android:id="@+id/srbtn1"
+                />
+
+            <Button
+                android:layout_width="30mm"
+                android:layout_height="wrap_content"
+                android:text="供应商订单追踪"
+                android:id="@+id/srbtn2"
+                />
+            <Button
+                android:layout_width="30mm"
+                android:layout_height="wrap_content"
+                android:text="供应商订单统计"
+                android:id="@+id/srbtn3"
+                />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:background="#fff3f3f3"
+        android:orientation="horizontal" >
+    <RelativeLayout
+        android:id="@+id/rl_column"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:layout_weight="1.0" >
+
+        <Tools.ColumnHorizontalScrollView
+            android:id="@+id/mColumnHorizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/mRadioGroup_content"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" />
+        </Tools.ColumnHorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/shade_left"
+            android:layout_width="10.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/channel_leftblock"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/shade_right"
+            android:layout_width="10.0dip"
+            android:layout_height="40.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/channel_rightblock"
+            android:visibility="visible" />
+    </RelativeLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000000000"
+                android:textSize="20dp"
+                android:textColor="#080808"
+                android:id="@+id/logistics_listview_delivery_item_sgoods_snumber"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发货单号"
+                android:textSize="10dp"
+                android:textColor="#d1bbbb"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未发货"
+                android:textColor="#ffffff"
+                android:background="#080808"
+                android:textSize="10dp"
+                android:id="@+id/logistics_listview_delivery_item_sgoods_status"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送货日期"
+            android:textSize="10dp"
+            android:textColor="#d1bbbb"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="20150819"
+            android:textSize="10dp"
+            android:textColor="#282424"
+            android:layout_marginTop="20dp"
+            android:id="@+id/logistics_listview_delivery_item_sgoods_date"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

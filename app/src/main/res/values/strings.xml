@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SRM_Android</string>
+    <string name="title_activity_order_select_view">OrderSelectViewActivity</string>
+    <string-array name="order_status">
+        <item></item>
+        <item>未发货</item>
+        <item>发货完成</item>
+        <item>未设置</item>
+    </string-array>
+    <string-array name="provider_confirm">
+        <item></item>
+        <item>已确认</item>
+        <item>未确认</item>
+    </string-array>
+    <string-array name="delivery_status">
+        <item></item>
+        <item>未收货</item>
+        <item>收货完成</item>
+        <item>部分收货</item>
+    </string-array>
+</resources>

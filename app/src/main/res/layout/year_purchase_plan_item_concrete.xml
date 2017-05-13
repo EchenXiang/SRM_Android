@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout android:stretchColumns="2" android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/activity_main_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="#101010"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:src="@drawable/back"
+                android:id="@+id/year_turnback"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="采购计划详情"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="#ffffff"/>
+
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+    <TableRow>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text="供应商" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text=":" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:id="@+id/year_provider" android:background="@drawable/line" android:gravity="center_vertical"/>
+
+</TableRow>
+
+
+    <TableRow>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text="物料号" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text=":" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:id="@+id/year_material_number" android:background="@drawable/line" android:gravity="center_vertical"/>
+
+</TableRow>
+
+
+    <TableRow>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text="物料名" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text=":" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:id="@+id/year_material_name" android:background="@drawable/line" android:gravity="center_vertical"/>
+
+</TableRow>
+
+
+    <TableRow>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text="发布日期" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text=":" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:id="@+id/year_release_year" android:background="@drawable/line" android:gravity="center_vertical"/>
+
+</TableRow>
+
+
+    <TableRow>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text="单位" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text=":" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:id="@+id/year_unit" android:background="@drawable/line" android:gravity="center_vertical"/>
+
+</TableRow>
+
+
+    <TableRow>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text="当日库存" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text=":" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:id="@+id/year_day_stock" android:background="@drawable/line" android:gravity="center_vertical"/>
+
+</TableRow>
+
+
+    <TableRow>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text="下年需求" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text=":" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:id="@+id/year_require" android:background="@drawable/line" android:gravity="center_vertical"/>
+
+</TableRow>
+
+
+    <TableRow>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text="业务主管" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:background="@drawable/line" android:text=":" android:gravity="center_vertical"/>
+
+    <TextView android:layout_height="50dp" android:id="@+id/year_execetive" android:background="@drawable/line" android:gravity="center_vertical"/>
+
+</TableRow>
+
+</TableLayout>

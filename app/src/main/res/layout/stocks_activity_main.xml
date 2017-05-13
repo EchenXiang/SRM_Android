@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/activity_main_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="#101010"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:src="@drawable/back"
+                android:id="@+id/btn_left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="库存查询"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="#ffffff"/>
+
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:background="#00000000"
+
+            android:persistentDrawingCache="animation">
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_alignBottom="@id/viewpager">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv1"
+                android:src="@drawable/node_select"
+            />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv2"
+                android:src="@drawable/node_normal"
+            />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv3"
+                android:src="@drawable/node_normal"
+            />
+
+        </LinearLayout>
+</RelativeLayout>
+
+
+<HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fadingEdge="none"
+        android:layout_marginTop="0dp"
+        android:scrollbars="none"
+        android:background="#EBEBEB"
+        android:id="@+id/horizontalScrollView"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true">
+
+                <RadioButton
+                    style="@style/radioButton"
+                    android:id="@+id/btn1"
+                    android:text="主机厂查询"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    />
+
+            </RadioGroup>
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:background="#33b5e5"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主管"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/month_excutive" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/month_purchase_plan_excutive_show"
+        android:text="160"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/month_excutive"
+        android:layout_toRightOf="@+id/month_excutive" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/month_purchase_plan_date_show"
+        android:text="20160716"
+        android:layout_alignBottom="@+id/month_excutive"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="46dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/month_excutive"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/month_purchase_plan_material_name_show"
+            android:text="111111111111111111111111111111111111"
+            android:textColor="#030303"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当日库存"
+                    android:textSize="13dp"
+                    android:textColor="#fafaf6"
+                    android:background="#0b0b0b"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28"
+                    android:id="@+id/month_purchase_plan_day_stock_show"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#fcfbfb"
+                    android:text="下月需求"
+                    android:textSize="13dp"
+                    android:background="#050505"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="28"
+                    android:id="@+id/month_purchase_plan_second_show"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+s
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

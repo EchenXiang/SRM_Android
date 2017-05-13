@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*"
+    android:background="#EBEBEB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/activity_main_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="#101010"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:src="@drawable/back"
+                android:id="@+id/btn_left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="库存查询"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="#ffffff"/>
+
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="00dp"
+        android:background="@drawable/bk">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:text="主机厂名称："
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            android:id="@+id/stocks_item_chose_title"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bk">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:text="主机厂编号："
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            android:id="@+id/stocks_item_chose_host_number"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bk">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:text="收验单号："
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            android:id="@+id/stocks_item_chose_charge_number"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bk">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:text="仓库名称："
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            android:id="@+id/stocks_item_chose_warehouse"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bk">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:text="物料名称："
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            android:id="@+id/stocks_item_chose_material_name"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bk">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:text="规格型号："
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            android:id="@+id/stocks_item_chose_specification"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bk">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:text="数量："
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            android:id="@+id/stocks_item_chose_amount"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bk">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:text="单位："
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            android:id="@+id/stocks_item_chose_unit"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bk">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:text="物料编码："
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            android:id="@+id/stocks_item_chose_material_number"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bk">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:text="入库时间："
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            android:id="@+id/stocks_item_chose_storage_time"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bk">
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:text="备注："
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text=""
+            android:gravity="center_vertical|left"
+            android:textColor="#000"
+            android:textSize="7.5pt"
+            android:id="@+id/stocks_item_chose_remarks"/>
+    </TableRow>
+
+
+</TableLayout>
